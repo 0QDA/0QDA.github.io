@@ -471,7 +471,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </code></pre>
 <p>注意：每个模块中，只允许使用唯一的一次 export default，否则会报错</p>
 <h5 id="按需导出"><a href="#按需导出" class="headerlink" title="按需导出"></a>按需导出</h5><pre class=" language-js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">let</span> s1 <span class="token operator">=</span> <span class="token string">'秋去冬来'</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">let</span> s2 <span class="token operator">=</span> <span class="token string">'最帅'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">let</span> s2 <span class="token operator">=</span> <span class="token string">'帅'</span><span class="token punctuation">;</span>
 <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span><span class="token punctuation">;</span>
     a<span class="token punctuation">:</span> <span class="token string">'qda'</span>
@@ -556,7 +556,6 @@ thenFs<span class="token punctuation">.</span><span class="token function">readF
 <span class="token punctuation">]</span><span class="token punctuation">;</span>
 Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>promiseAll<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>results <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span><span class="token punctuation">;</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
 </code></pre>
 <h5 id="Promise-race"><a href="#Promise-race" class="headerlink" title="Promise.race()"></a><strong>Promise.race()</strong></h5><p>Promise.race() 方法会发起并行的 Promise 异步操作，只要任何一个异步操作完成，就立即执行下一步的</p>
@@ -594,7 +593,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token function">getAllFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'A'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">//结果：QDA 秋去冬来 最帅</span>
+<span class="token comment" spellcheck="true">//结果：QDA 秋去冬来 帅</span>
 </code></pre>
 <h4 id="EventLoop"><a href="#EventLoop" class="headerlink" title="EventLoop"></a><strong>EventLoop</strong></h4><p>JavaScript 主线程从“任务队列”中读取异步</p>
 <p>任务的回调函数，放到执行栈中依次执行。这 个过程是循环不断的，所以整个的这种运行机 制又称为 EventLoop（事件循环）。</p>
