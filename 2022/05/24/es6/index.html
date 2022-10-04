@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ES6, 机会，机遇">
+    <meta name="keywords" content="ES6语法, 机会，机遇">
     <meta name="description" content="未来的变数太多，而我所能做的，就是走好这一步。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>ES6 | 秋去冬来</title>
+    <title>ES6语法 | 秋去冬来</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <!-- <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"> -->
@@ -255,12 +255,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">ES6</h1>
+                    <h1 class="description center-align post-title">ES6语法</h1>
                 </div>
             </div>
         </div>
@@ -454,7 +454,7 @@
 <li><p>向外共享模块成员使用 export 关键字</p>
 </li>
 </ul>
-<p>node.js 中默认仅支持 CommonJS 模块化规范，若想基于 node.js 体验与学习 ES6 的模块化语法在 package.json 的根节点中添加 “type”: “module” 节点</p>
+<p>node.js 中默认仅支持 CommonJS 模块化规范，若想基于 node.js 体验ES6 的模块化语法在 package.json 的根节点中添加 “type”: “module” 节点</p>
 <h5 id="默认导出"><a href="#默认导出" class="headerlink" title="默认导出"></a><strong>默认导出</strong></h5><p>注意：每个模块中，只允许使用唯一的一次 export default，否则会报错</p>
 <p>默认导出的语法： export default 默认导出的成员</p>
 <pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> n1 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
@@ -493,8 +493,12 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </code></pre>
 <h4 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h4><h5 id="回调地狱"><a href="#回调地狱" class="headerlink" title="回调地狱"></a><strong>回调地狱</strong></h5><p>多层回调函数的相互嵌套，就形成了回调地狱</p>
 <p>回调地狱的缺点：</p>
-<p>⚫   代码耦合性太强，牵一发而动全身，难以维护</p>
-<p>⚫   大量冗余的代码相互嵌套，代码的可读性变差</p>
+<ul>
+<li><p>代码耦合性太强，牵一发而动全身，难以维护</p>
+</li>
+<li><p>大量冗余的代码相互嵌套，代码的可读性变差</p>
+</li>
+</ul>
 <h5 id="Promise-的基本概念"><a href="#Promise-的基本概念" class="headerlink" title="Promise 的基本概念"></a><strong>Promise</strong> <strong>的基本概念</strong></h5><p>① Promise 是一个构造函数</p>
 <ol>
 <li>我们可以创建 Promise 的实例 const p &#x3D; new Promise()；</li>
@@ -575,9 +579,8 @@ Promise<span class="token punctuation">.</span><span class="token function">race
     <span class="token keyword">const</span> r2 <span class="token operator">=</span> <span class="token keyword">await</span> thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/2.txt'</span><span class="token punctuation">,</span> <span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token function">getAllFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
 </code></pre>
-<h5 id="async-x2F-await-的-使用注意事项"><a href="#async-x2F-await-的-使用注意事项" class="headerlink" title="async&#x2F;await 的****使用注意事项"></a><strong>async&#x2F;await</strong> <strong>的****使用注意事项</strong></h5><p>① 如果在 function 中使用了 await，则 function 必须被 async 修饰</p>
+<h5 id="async-x2F-await-的使用注意事项"><a href="#async-x2F-await-的使用注意事项" class="headerlink" title="async&#x2F;await 的使用注意事项"></a><strong>async&#x2F;await</strong> 的使用注意事项</h5><p>① 如果在 function 中使用了 await，则 function 必须被 async 修饰</p>
 <p>② 在 async 方法中，第一个 await 之前的代码会同步执行，await 之后的代码会异步执行</p>
 <pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> thenFs <span class="token keyword">from</span> <span class="token string">'then-fs'</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Q'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -591,7 +594,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token function">getAllFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'A'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">//结果：QDA 秋去冬来 最帅 NB</span>
+<span class="token comment" spellcheck="true">//结果：QDA 秋去冬来 最帅</span>
 </code></pre>
 <h4 id="EventLoop"><a href="#EventLoop" class="headerlink" title="EventLoop"></a><strong>EventLoop</strong></h4><p>JavaScript 主线程从“任务队列”中读取异步</p>
 <p>任务的回调函数，放到执行栈中依次执行。这 个过程是循环不断的，所以整个的这种运行机 制又称为 EventLoop（事件循环）。</p>
